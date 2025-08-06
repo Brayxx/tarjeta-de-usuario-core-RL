@@ -1,22 +1,39 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    margin: 100px;
+    background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    gap: 80px;
+    padding: 20px;
+    width: 1120px;
+    margin-top: 20px;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
 }
 
 .card {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 510px;
+    width: 610px;
     text-align: center;
     overflow: hidden;
-    height: 420px;
+    height: 460px;
 }
 
 .banner {
-    background-color: #38c8df;
-    height: 85px;
+    background-color: #00BCD4;
+    height: 100px;
     position: relative;
 }
 
@@ -44,7 +61,7 @@ body {
 
 .location {
     font-size: 15px;
-    color: #666666;
+    color: #000000;
     margin-left: 18px;
     display: flex;
     justify-content: flex-start;
@@ -53,36 +70,34 @@ body {
 }
 
 .role {
-    font-size: 13px;
-    color: #888888;
+    font-size: 15px;
+    color: #000000;
     margin-left: 18px;
     text-align: left;
     display: flex;
     position: relative;
-    top: 15px;
 }
 
 .bio {
-    font-size: 13px;
-    color: #888888;
+    font-size: 15px;
+    color: #000000;
     line-height: 1.6;
     text-align: left;
     margin-left: 18px;
     position: relative;
-    top: 15px;
+    top: 5px;
 }
 
 .edit-button {
-    background-color: #ebebeb;
-    border: 1px solid #ebebeb;
-    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #0c7ab6;
     padding: 6px 14px;
-    font-size: 13px;
+    font-size: 14.5px;
     cursor: pointer;
-    margin-top: 18px;
+    margin-top: -5px;
     position: relative;
-    left: -172px;
-    top: 40px;
+    left: -225px;
 }
 
 h1 {
@@ -93,4 +108,162 @@ h1 {
     position: relative;
     bottom: -10px;
     left: 18px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    max-width: 1120px;
+    height: 95px;
+    font-weight: bold;
+    margin: 0;
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 190px;
+}
+
+.nav-links li {
+    margin-right: 18px;
+}
+
+.nav-links li:last-child {
+    margin-right: 5px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 27px;
+    font-weight: bold;
+}
+
+.edit-buttons {
+    background-color: #00BCD4;
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: -5px;
+    position: relative;
+    left: -21px;
+    font-weight: bold;
+    border: none;
+}
+
+.education {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 610px;
+    text-align: left;
+    overflow: hidden;
+    height: 192px;
+    margin-top: 5px;
+}
+.education-item {
+    margin-top: -10px;
+    padding: 20px;
+}
+
+span {
+    color: #000000;
+    display: block;
+    margin-top: -15px;
+}
+
+
+.connections-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.connections-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 380px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 26px;
+    color: #000000;
+}
+
+.connection-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.user-connection {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+.connection-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    object-fit: cover;
+}
+
+.user-connection span {
+    font-weight: normal;
+    flex-grow: 1;
+    display: block; 
+    margin-top: 0;
+}
+
+
+.connection-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.accept, .reject {
+    background-color: transparent;
+    color: #000000;
+    border-radius: 100%;
+    border-width: 2.9px;
+    border-color: rgb(167, 56, 167);
+    border-style: double;
+    cursor: pointer;
+    font-size: auto;
+    height: 50px;
+    width: 50px;
 }
